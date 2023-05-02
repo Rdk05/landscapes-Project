@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo Mono', monospace;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 70%;
+
+}
+
+body{
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    min-height: 90vh;
+    padding: 2rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header{
+    background-color: rgb(20, 20, 66);
+    height: 10rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo img{
+    height: 8rem;
+    border-radius: 50%;
+    /* background:none; */
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+::placeholder{
+    color: gray;
+    font-size: 2rem;
+    /* background-color: #ffffff; */
+    opacity: 0.5;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search-input{
+    background: rgb(20, 20, 66);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    width: 20rem;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.nav-search-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search-btn img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.nav-user{
+    justify-content: flex-end;
+}
+
+
+.nav-user-img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.nav-ell{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    background:   rgb(20, 20, 66);;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0.3rem;
+    margin-right: 1rem;
+    /* list-style-type: none; */
+   
+}
+
+.nav a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-el{
+    color: white;
+    font-size: 1.5rem;
+    /* border: 1px solid white; */
+    background: none;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0.3rem;
+    margin-right: 1rem;
+    list-style-type: none;
+
+}
+
+.nav-ell:hover, .nav-ell:active{
+    background-color: gray;
+    color: rgb(250, 246, 246);
+    border-color: white;
+}
+
+.main{
+    background-color: white;
+    padding: 7rem 5rem;
+    position: relative;
+    
+}
+
+.card-box{
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 2rem  rgb(138, 138, 223);
+    background-color: white;
+}
+
+.card-top{
+    position: relative;
+}
+
+.card-logo{
+    height: 20rem;
+    position: relative;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-heading{
+    font-size: 2rem;
+    color: slategray;
+
+}
+
+.card-body{
+    padding: 2rem;
+}
+
+.card-body-heading{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-summary{
+    font-style: italic;
+    height: 10rem;
+}
+
+.card-body-star{
+    font-size: 1.2rem;
+}
+
+.card-body-value{
+    font-size: 1.2rem;
+    color: rgb(43, 40, 40);
+}
+
+.btn{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-blue{
+    background-color:   rgb(92, 92, 185);
+    color: white;
+    font-weight: 700;
+
+}
+
+footer{
+    background-color:  rgb(4, 4, 59);
+    height: 18rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.footer-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.socialIcons{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.fa-brands{
+    color: gray;
+    background-color: black;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+
+
+
+.footerNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* list-style-type: none; */
+}
+ 
+.footerNav ul li{
+    list-style: none;
+    padding-top: 2rem;
+}
+
+.footerNav ul li a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* padding-top: 2rem; */
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+.footerNav a:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.footerBottom{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+
+.section-head{
+    height: 40vw;
+    position: relative;
+}
+.head-hero{
+    height: 100%;
+}
+.head-img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.head-box{
+    position: absolute;
+    bottom: 2vw;
+    left: 1rem;
+    top: 85%;
+}
+.head-primary{
+    font-size: 5rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.head-primary span{
+    background:linear-gradient(45deg,  rgb(52, 52, 53),  rgb(69, 69, 75))
+}
+
+.section-details{
+    background-color: gainsboro;
+    margin: 1rem;
+    display: flex;
+    margin-top: 5rem;
+
+}
+
+
+.quick-view{
+    background-color: gainsboro;
+    color: black;
+    display: flex;
+    
+    /* align-items: center; */
+    padding: 1rem 5rem;
+    flex: 0 0 30%;
+    justify-content: center;
+
+}
+
+.quick-view > *{
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
+    
+}
+
+.margin-bt{
+     margin-bottom: 3rem !important;
+}
+.head-secondary{
+    /* color: black; */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.quickviewbox-details{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.quickviewbox-details img{
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.quickviewbox-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.quickviewbox-title{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+
+.detail-box{
+    margin-right: 1rem;
+    /* display: flex; */
+    padding: 6rem;
+}
+
+.detail-box-text{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.section-comment{
+    padding: 5rem;
+    margin-top: 5rem;
+    position: relative;
+    background-color: gainsboro;
+
+}
+
+.comment{
+    padding: 3rem 0;
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+}
+
+.comment-card{
+    width: 20rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.377);
+}
+
+.comment-avatar{
+    margin-bottom: 1rem;
+
+}
+
+.comment-user-img{
+    border-radius: 50%;
+    height: 4rem;
+
+}
+
+.comment-user{
+    /* margin-left: 1rem; */
+    font-size: 1.2rem;
+}
+
+.comment-text{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.section-images{
+    display: flex;
+    position: relative;
+    background-color: gainsboro;
+    margin-top: 5rem;
+    /* padding: 3rem 0; */
+    /* padding: 5rem; */
+    /* margin-top: 1vw; */
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-auto-flow: column;
+}
+
+.image-box img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform .1s;
+}
+
+
+.image-box img:hover, 
+.image-box img:active{
+     /* background-image: rgb(35, 24, 24); */
+    background: #ffffff;
+    transform: scale(1.1);
+    /* zoom: 90%; */
+    /* box-shadow: 3px 3px 3px 3px rgb(138, 138, 223); */
+    border-color: white;
+    cursor: pointer;
+}
+
+
+.section-download{
+    padding: 3rem;
+    margin-top: 5rem;
+    position: relative;
+    background-color: gainsboro;
+
+}
+
+.download{
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow:  0 2rem 4rem black;
+}
+
+.download-img{
+    height: 15rem;
+    /* width: 7rem; */
+    position: relative;
+    transition: transform .1s;
+    
+}
+
+.download-img:hover{
+    transform: scale(1.1);
+
+}
+
+.download-pic{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.download-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg,  rgb(52, 52, 53),  rgb(69, 69, 75));
+    
+}
+
+.download-btn{
+    font-size: 1rem;
+    margin-top: 2rem;
+    border: none;
+    background-color: black;
+    justify-content: end;
+    
+}
+
+.login-form{
+    margin: 0 auto;
+    max-width: 30%;
+    /* background-image: url("https://wallpapercave.com/wp/wp2939993.jpg"); */
+    background-color: gainsboro;
+    padding: 5rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem black;
+
+}
+
+.form-label{
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+
+}
+
+.form-input{
+    display: block;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    /* background: wheat; */
+    border-radius: 5px;
+    border-bottom: 3px solid black;
+}
+
+.forgot{
+    font-size: 1.5rem;
+    margin-left: 5.5rem;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.remember{
+    font-size: 2rem;
+}
+
+.form{
+    background-image: url("https://img.freepik.com/premium-vector/network-connection-background-abstract-style_23-2148875738.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.log{
+    background-image: url("https://wallpapercave.com/wp/wp2939993.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form h2{
+    font-size: 4rem;
+    color: rgb(4, 4, 59);
+    text-align: center;
+}
+.sign-form{
+    margin: 0 auto;
+    max-width: 30%;
+    /* max-height: 80%; */
+    /* background-color: purple; */
+    /* background-image: url("https://wallpapercave.com/wp/wp2939993.jpg"); */
+    background-color: gainsboro;
+    padding: 8rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem black;
+
+}
+
+.sign-form h1{
+    font-size: 4rem;
+    color: rgb(4, 4, 59);
+    text-align: center;
+}
+
+
+
+
+.center{
+    /* margin: 0 auto; */
+    text-align: center;
+    display: flex;
+    /* position: relative; */
+    background-color: rgb(4, 4, 59);
+    transition: transform .1s;
+}
+
+.center:hover, .center:active{
+    background-color: rgb(35, 24, 24);
+    color: rgb(250, 246, 246);
+    border-color: white;
+    transform: scale(1.1);
+}
+
+.icon{
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+h6{
+    font-size: 1.5rem;
+}
+.c1{
+    background-color: rgb(1, 1, 27);
+    margin-top: 1rem;
+}
+.c2{
+    background-color:blue ;
+    margin-top: 1rem;
+}
+.c3{
+    background-color: red;
+    margin-top: 1rem;
+}
